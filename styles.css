@@ -1,0 +1,71 @@
+body {
+  background-color: #EFEFEF;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+}
+
+header {
+  background-color: #31343a;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-image, .cheese-image {
+  height: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: end;
+  border: 2px orange solid;
+  margin: 0%;
+}
+
+nav > ul {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+
+li {
+  font-size: x-large;
+  margin: 1%;
+}
+
+.logo{
+  width: 10%;
+}
+
+main {
+  padding-top: 14vmin;
+}
+
+h1 {
+  margin: 5vmin;
+  font-size: 5vmin;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.cards {
+  border: 3px black solid;
+  background-color: white;
+  height: 60vmin;
+  width: 40vmin;
+  margin-bottom: 5vmin;
+  border-radius: 2vmin;
+}
