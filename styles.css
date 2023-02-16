@@ -132,4 +132,11 @@ h2, h3 {
   main {
     margin-top: 30%;
   }  
+  .card{
+    width: 86vmin;
+    height: 120vmin;
+  }
+  .logo{
+    width: 45vmin;
+  }
 }
