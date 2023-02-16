@@ -6,6 +6,7 @@ body {
 
 header {
   background-color: #31343a;
+  border-bottom: 3px gold solid;
   color: white;
   width: 100%;
   position: fixed;
@@ -13,24 +14,38 @@ header {
 }
 
 .user-section {
+  font-family: 'Montserrat';
+  padding: 1% 1% 0 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.user-image, .cheese-image {
+.user-icon, .cart-icon {
   height: 20px;
+}
+
+p {
+  color: #ffcc33;
+  margin: 0%;
+  padding-left: 0.5vmin;
+  padding-right: 1vmin;
+  display: flex;
+  align-items: center;
+}
+
+.user-carrot {
+  font-size: small;
+  margin: 0 0 1vmin 1vmin;
 }
 
 nav {
   display: flex;
-  align-items: end;
-  border: 2px orange solid;
+  align-items: center;
   margin: 0%;
 }
 
 nav > ul {
-  margin: 0;
   width: 100%;
   display: flex;
   list-style: none;
@@ -38,20 +53,38 @@ nav > ul {
 
 li {
   font-size: x-large;
-  margin: 1%;
+  color: transparent;  
+  text-shadow: 0 0 0 white;
+  margin-right: 3%;
+  margin-left: 0%;
+}
+
+li:hover {
+  text-shadow: 0 0 0 #ffcc33;
+  cursor: pointer;
 }
 
 .logo{
-  width: 10%;
+  width: 20%;
+  padding: 1%;
 }
 
 main {
-  padding-top: 14vmin;
+  margin-top: 12%;
 }
 
 h1 {
-  margin: 5vmin;
+  margin: 3%;
   font-size: 5vmin;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+h2, h3 {
+  color: white;
+  margin-bottom: 0%;
 }
 
 .cards-section {
@@ -60,12 +93,43 @@ h1 {
   flex-wrap: wrap;
 }
 
+.sub-head {
+  font-family: 'Montserrat';
+}
 
-.cards {
-  border: 3px black solid;
-  background-color: white;
+.card {
+  border: 3px white solid;
+  background-color: #31343a;
   height: 60vmin;
-  width: 40vmin;
+  width: 43vmin;
   margin-bottom: 5vmin;
   border-radius: 2vmin;
+}
+
+.card:hover {
+  border: 3px gold solid;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
+}
+
+.cost {
+  font-size: smaller;
+  align-items: center;
+}
+
+.dollars {
+  font-size: xx-large;
+  margin: 0 1% 0 1%;
+}
+
+@media only screen and (max-width: 1000px){
+  ul {
+    flex-direction: column;
+  }
+  li {
+    font-size: large;
+  }
+  main {
+    margin-top: 30%;
+  }  
 }
