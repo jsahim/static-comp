@@ -11,6 +11,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 .user-section {
@@ -23,6 +24,14 @@ header {
 
 .user-icon, .cart-icon {
   height: 20px;
+}
+
+.cart-icon{
+  margin-left: 2%;
+}
+
+.cart-icon:hover {
+  cursor: pointer;
 }
 
 p {
@@ -59,6 +68,10 @@ li {
   margin-left: 0%;
 }
 
+li:nth-child(2) { 
+  text-shadow: 0 0 0 #ffcc33;
+}
+
 li:hover {
   text-shadow: 0 0 0 #ffcc33;
   cursor: pointer;
@@ -80,6 +93,7 @@ h1 {
 
 h2 {
   font-size: xx-large;
+  margin: 0%;
 }
 
 h2, h3 {
@@ -98,18 +112,80 @@ h2, h3 {
 }
 
 .card {
-  border: 3px white solid;
+  border-radius: 1%;
+  border: 3px #31343a solid;
   background-color: #31343a;
   height: 60vmin;
   width: 43vmin;
   margin-bottom: 5vmin;
-  border-radius: 2vmin;
 }
 
 .card:hover {
   border: 3px gold solid;
-  cursor: pointer;
   box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
+}
+
+.sales {
+  width: inherit;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;  
+  z-index: 1;
+}
+
+.add-image {
+  margin: 2%;
+  width: 8vmin;
+  height: 8vmin;
+}
+
+.add-image:hover {
+  cursor: pointer;
+}
+
+.units-sold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat';
+  margin: 2%;
+}
+
+.units-sold > p {
+  color: white;
+  margin: 0%;
+  padding: 0%;
+}
+
+.units-sold > p:nth-child(2) {
+  font-size: 40px;
+  transform: translateY(-15%);
+}
+
+.sale-end {
+  text-decoration: ;
+}
+
+.image-wrap {
+  background-color: white;
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+
+.cheese-image {
+  width: inherit;
+  transform: translateY(-20%);
+}
+
+.card-details {
+  margin: 2% 0 0 5%;
+}
+
+a {
+  color: #ffcc33;
+  font-family: 'Montserrat'
 }
 
 .cost {
