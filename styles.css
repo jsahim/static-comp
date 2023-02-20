@@ -4,6 +4,8 @@ body {
   margin: 0;
 }
 
+/* HEADER NAVIGATION */
+
 header {
   background-color: #31343a;
   border-bottom: 3px gold solid;
@@ -90,8 +92,21 @@ li:hover {
   display: none;
 }
 
+
+/* CHEESE CARD SECTION */
+
 main {
   margin-top: 15%;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.sub-head {
+  font-family: 'Montserrat';
 }
 
 h1 {
@@ -109,20 +124,9 @@ h3 {
   margin-top: 4%;
 }
 
-
 h2, h3 {
   color: white;
   margin-bottom: 0%;
-}
-
-.cards-section {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.sub-head {
-  font-family: 'Montserrat';
 }
 
 .card {
@@ -207,6 +211,9 @@ a {
   margin: 0 1% 0 1%;
 }
 
+
+/* MEDIA QUERIES */
+
 @media only screen and (min-width: 601px) and (max-width: 1000px){
   nav > ul {
     flex-direction: column;
@@ -214,7 +221,7 @@ a {
   main {
     margin-top: 25%;
   }  
-  .logo{
+  .logo {
     width: 45vmin;
     margin: 2%;
   }
@@ -231,10 +238,10 @@ a {
   li {
     font-size: 3.5vmin;
   }
-  .user-section{
+  .user-section {
     display: none;
   }
-  .menu{
+  .menu {
     display: flex;
     cursor: pointer;
     width: 15vmin;
@@ -243,17 +250,17 @@ a {
   main {
     margin-top: 25%;
   }  
-  .card{
+  .card {
     width: 86vmin;
     height: 120vmin;
   }
-  h2{
+  h2 {
     font-size: 9vmin;
   }
-  h3{
+  h3 {
     font-size: 6vmin;
   }
-  .logo{
+  .logo {
     width: 45vmin;
     margin: 2%;
   }
