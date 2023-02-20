@@ -238,6 +238,7 @@ a {
     display: flex;
     cursor: pointer;
     width: 15vmin;
+    margin-right: 2%;
   }
   main {
     margin-top: 25%;
