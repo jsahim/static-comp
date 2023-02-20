@@ -51,6 +51,7 @@ p {
 
 nav {
   display: flex;
+  flex-direction: row;
   align-items: flex-end;
   margin: 0;
 }
@@ -83,6 +84,11 @@ li:hover {
 .logo{
   width: 20%;
   padding: 1%;
+  margin-right: 4%;
+}
+
+.menu{
+  display: none;
 }
 
 main {
@@ -202,52 +208,23 @@ a {
   margin: 0 1% 0 1%;
 }
 
-/* @media only screen and (min-width: 800px){
-  ul {
-    flex-direction: column;
-    margin-left: 1%;
-  }
-  li {
-    font-size: 3vmin;
-    margin: 1%;
-  }
-  .user-section{
-    margin: 1%;
-  }
-  .user-carrot, .user-section > p {
-    font-size: 3vmin;
-  }
-  .user-icon, .cart-icon {
-    height: 40px;
-  }
+@media only screen and (min-width: 300px) and (max-width: 800px){
   nav {
     justify-content: space-between;
+    align-items: center;
   }
-  main {
-    margin-top: 25%;
-  }  
-  .card{
-    width: 43vmin;
-    height: 60vmin;
-  }
-  .logo{
-    width: 50vmin;
-  }
-}
-
-@media only screen and (max-width: 400px){
-  ul {
-    flex-direction: column;
+  nav > ul {
+    display: none;
   }
   li {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
   }
   .user-section{
     display: none;
   }
-
-  .user-icon, .cart-icon {
-    height: 40px;
+  .menu{
+    display: flex;
+    width: 15vmin;
   }
   main {
     margin-top: 25%;
@@ -256,8 +233,14 @@ a {
     width: 86vmin;
     height: 120vmin;
   }
+  h2{
+    font-size: 9vmin;
+  }
+  h3{
+    font-size: 6vmin;
+  }
   .logo{
     width: 45vmin;
+    margin: 2%;
   }
 }
- */
